@@ -19,10 +19,10 @@ Este projeto apresenta uma interface de formulário de registro (Criar Conta) mo
 ## 📸 Demonstração
 
 ### 🌙 Modo Escuro
-![Captura de tela no modo escuro](./dark.png)
+<img src="./dark.png" width="400">
 
 ### ☀️ Modo Claro
-![Captura de tela no modo claro](./light.png)
+<img src="./light.png" width="400">
 
 ## 📂 Estrutura do Formulário
 
