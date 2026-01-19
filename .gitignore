@@ -1,0 +1,30 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências (caso use Node.js no futuro)
+node_modules/
+
+# Build / dist
+dist/
+build/
+
+# IDEs/editores
+.vscode/
+.idea/
+*.swp
+
+# Arquivos temporários
+*.tmp
+*.cache
+
+# Ambiente
+.env
+.env.local
+.env.*.local

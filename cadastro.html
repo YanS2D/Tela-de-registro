@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>tela de cadastro</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Botão tipo switch (geralmente usado para tema claro/escuro) -->
+        <label class="switch">
+            <input type="checkbox" id="toggle-switch">
+            <span class="slider"></span>
+        </label>
+
+        <!-- Área do formulário -->
+        <div class="formulario">
+       
+            <h2>Criar conta</h2>
+            <form id="formRegistro">
+
+                <!-- Campo para o nome do usuário -->
+                <label for="nome"></label>
+                <input type="text" id="nome" placeholder="Digite seu nome aqui" required>
+
+                <!-- Campo para o email do usuário -->
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Digite seu email aqui" required>
+
+                <!-- Campo para a senha -->
+                <label for="senha"></label>
+                <input type="password" id="senha" placeholder="Digite sua senha aqui" required>
+
+                <!-- Campo para confirmar a senha -->
+                <label for="confirmar"></label>
+                <input type="password" id="confirmar" placeholder="Digite novamente a senha" required>
+
+                <!-- Mensagem de erro (preenchida via JavaScript) -->
+                <p id="erro" class="erro"></p>
+
+                <!-- Botão para enviar o formulário -->
+                <button type="submit">registrar</button>
+
+                <!-- Texto indicando opção de login -->
+                <p class="conta">Tem conta ?</p>
+
+                <!-- Link para a página de login -->
+                <a class="login" href="../login/login.html">voltar ao login</a>
+
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+
+</html>

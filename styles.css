@@ -1,0 +1,282 @@
+/* Reset básico: remove margens/paddings padrões e define box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+/* Define altura total da página e cor de fundo padrão (modo escuro) */
+html,
+body {
+  height: 100%;
+  background-color: #2d2a2a;
+}
+
+/* Centraliza o conteúdo na tela */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Caixa principal do formulário */
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 550px;
+  background-color: #332f2f;
+  border-radius: 20px;
+  border: 3px solid #0051ff;
+  box-shadow: 0 0 7px rgba(28, 82, 199, 0.6);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Área interna do formulário */
+.formulario {
+  background-color: #332f2f;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título do formulário */
+.formulario h2 {
+  font-size: 1.5rem;
+  color: #0051ff;
+  text-shadow: 0 0 10px rgba(35, 100, 235, 0.6);
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo geral das labels */
+label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+/* Estilo dos campos de texto, email e senha */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+/* Cor do texto placeholder */
+input::placeholder {
+  color: #1f1d1d;
+}
+
+/* Estilo do input quando está em foco */
+input:focus {
+  outline: none;
+  border-color: #f4f3f2;
+  box-shadow: 0 0 0 2px #ece8e2;
+}
+
+/* Botão de registrar */
+button {
+  width: 200px;
+  background-color: #262497;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin: 16px auto 0;
+  display: block;
+}
+
+/* Efeito hover no botão */
+button:hover {
+  background-color: #0059ff;
+}
+
+/* Estilo do botão desativado */
+button:disabled {
+  background-color: #ccc;
+  cursor: wait;
+}
+
+/* Texto "Tem conta?" */
+.conta {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+/* Link para login */
+.login {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Switch do modo claro/escuro */
+.switch {
+  position: relative;
+  align-self: flex-end;
+  width: 50px;
+  height: 25px;
+  margin: 25px 15px 0 0;
+  background-color: #332f2f;
+}
+
+/* Oculta o checkbox padrão */
+.switch input {
+  opacity: 0;
+}
+
+/* Fundo do slider do switch */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #afbcbf;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* Bolinha do switch */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Hover nos links */
+a:hover {
+  color: #0051ff;
+  text-shadow: 0 1 10px rgba(41, 100, 229, 0.6);
+}
+
+/* ============ MODO CLARO ============ */
+
+/* Fundo do switch no modo claro */
+.light-mode .switch {
+  background-color: white;
+}
+
+/* Slider ativado */
+input:checked + .slider {
+  background-color: #2d2a2a;
+  border-radius: 34px;
+}
+
+/* Movimento da bolinha ao ativar */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Caixa principal no modo claro */
+.light-mode .container {
+  background-color: #ffffff;
+  border: 3px solid #052f89;
+  box-shadow: 0 0 7px rgba(15, 59, 155, 0.6);
+}
+
+/* Formulário no modo claro */
+.light-mode .formulario {
+  background-color: #ffffff;
+}
+
+/* Corpo da página no modo claro */
+.light-mode {
+  background: white;
+  color: black;
+}
+
+/* Título no modo claro */
+.light-mode .formulario h2 {
+  color: #11119b;
+}
+
+/* Labels no modo claro */
+.light-mode .formulario label {
+  color: #332f2f;
+}
+
+/* Inputs no modo claro */
+.light-mode .formulario input {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+/* Botão no modo claro */
+.light-mode .formulario button {
+  background-color: #0b0b83;
+  color: white;
+}
+
+/* Hover do botão no modo claro */
+.light-mode .formulario button:hover {
+  background-color: #0059ff;
+}
+
+/* Links e textos no modo claro */
+.light-mode .formulario a,
+.light-mode .formulario .conta {
+  color: #332f2f;
+}
+
+/* Hover dos links no modo claro */
+.light-mode .formulario a:hover {
+  color: #0059ff;
+}
+
+/* Mensagem de erro no modo claro */
+.light-mode .formulario .erro {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 500px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  .formulario h2 {
+    font-size: 1.3rem;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 1rem;
+    width: 130px;
+  }
+}
