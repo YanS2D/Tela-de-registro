@@ -39,4 +39,4 @@ O formulário contém os seguintes campos traduzidos:
 
 1. Faça o download ou clone este repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   git clone https://github.com/YanS2D/Tela-de-registro.git
